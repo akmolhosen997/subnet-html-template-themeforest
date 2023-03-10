@@ -1,0 +1,159 @@
+@use '../abstracts/variables' as *;
+@use '../abstracts/mixins' as *;
+
+.subnet-footer-1 {
+    &-contact-1 {
+        &-item {
+            display: flex;
+            align-items: center;
+            grid-gap: 30px;
+            @media #{$lg} {
+                grid-gap: 20px;
+            }
+            .icon {
+                flex: 0 0 auto;
+                svg {
+                    @media #{$lg} {
+                        width: 30px;
+                    }
+                }
+            }
+            .content {
+                p {
+                    font-size: 16px;
+                    font-weight: 500;
+                    text-transform: capitalize;
+                    color: var(--clr-common-white);
+                    margin-bottom: 2px;
+                    line-height: 22px;
+                    opacity: .7;
+                }
+                h6 {
+                    font-weight: 700;
+                    font-size: 20px;
+                    margin-bottom: 0;
+                    color: var(--clr-theme-secondary);
+                }
+            }  
+        }
+    }
+
+
+    // footer-1-main
+    
+
+    &-widget {
+        &:is(.pl-60) {
+            @media #{$lg} {
+                padding-left: 40px;
+            }
+            @media #{$md, $xs} {
+                padding-left: 0px;
+            }
+        }
+        &:is(.pl-70) {
+            @media #{$lg} {
+                padding-left: 40px;
+            }
+            @media #{$md,$xs} {
+                padding-left: 0px;
+            }
+        }
+        ul {
+            li {
+                display: block;
+                &:not(:last-child) {
+                    margin-bottom: 19px;
+                }
+                a {
+                    display: inline-block;
+                    color: #9D9F9F;
+                    text-decoration: none;
+                    font-weight: 400;
+                    text-transform: capitalize;
+                    line-height: 24px;
+                    font-size: 15px;
+                    padding: 0px 0;
+                    &:hover {
+                        color: var(--clr-theme-primary);
+                    }
+                }
+            }
+        }
+    }
+    &-widget-title {
+        font-size: 22px;
+        font-weight: 700;
+        color: var(--clr-common-white);
+        text-transform: capitalize;
+        line-height: 17px;
+    }
+    &-logo {
+        a {
+            display: block;
+            margin-bottom: 23px;
+        }
+    }
+    .footer-1-text {
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 26px;
+        color: #9D9F9F;
+    }
+    &-social-link {
+        a {
+            text-align: center;
+            display: inline-block;
+            width: 40px;
+            height: 40px;
+            line-height: 40px;
+            font-size: 14px;
+            border: 1.5px solid rgba(255, 255, 255, 0.14);
+            border-radius: 50%;
+            color: var(--clr-common-white);
+            opacity: .7;
+            &:hover {
+                color: var(--clr-common-white);
+                background-color: var(--clr-theme-primary);
+                opacity: 1;
+            }
+            &:not(:last-child) {
+                margin-right: 7px;
+            }
+        }
+    }
+    &-form {
+        & input[type="email"] {
+            width: 100%;
+            height: 50px;
+            background-color: transparent;
+            border: 1.5px solid rgba(255, 255, 255, 0.1);
+            border-radius: 40px;
+            padding: 0 25px;
+            font-size: 13px;
+            font-weight: 400;
+            line-height: 10px;
+            color: #616161;
+            &::placeholder {
+                font-size: 13px;
+                font-weight: 400;
+                line-height: 10px;
+                color: #616161;
+            }
+        }
+    }
+} 
+
+.has-copyright-border-top {
+    border-top: 1px solid rgba(255, 255, 255, 0.10);
+}
+
+.subnet-copyright-text {
+    font-size: 14px;
+    font-weight: 400;
+    color: var(--clr-common-white);
+    text-transform: capitalize;
+    line-height: 17px;
+    opacity: .6;
+    margin: 0;
+}
