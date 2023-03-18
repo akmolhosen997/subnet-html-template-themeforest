@@ -1,3 +1,10 @@
+
+/*
+************
+*************************
+17. Pricing
+******************************************************* 
+*************************************************************** */
 @use '../abstracts/variables' as *;
 @use '../abstracts/mixins' as *;
 
@@ -39,17 +46,25 @@
         border-radius: 10px;
         width: 370px;
         padding: 50px 40px;
+        @media #{$xxl} {
+            width: 330px;
+        }
         @include transition(.3s);
         @media #{$xl} {
             width: 355px;
+        }
+        @media #{$xl} {
+            width: 340px;
         }
         @media #{$md} {
             width: 355px;
         }
         @media #{$xs} {
-            padding: 50px 25px;
+            width: 289px;
+            padding: 50px 30px;
         }
         @media #{$sm} {
+            width: 339px;
             padding: 50px 40px;
         }
         &-icon {
@@ -122,7 +137,7 @@
                     line-height: 22px;
                     position: relative;
                     opacity: .7;
-                    padding-left: 18px;
+                    padding-left: 20px;
                     &:not(:last-child) {
                         margin-bottom: 15px;
                     }
@@ -133,9 +148,8 @@
                         height: 8px;
                         border-radius: 50%;
                         background-color: var(--clr-theme-secondary);
-                        top: 30%;
+                        top: 6px;
                         left: 4px;
-                        transform: translateX(-50%);
                     }
                 }
             }
@@ -148,11 +162,6 @@
             }
         }
         &:hover {
-            .subnet-pricing-1-box-icon {
-                .icon {
-                    background-color: var(--clr-theme-secondary);
-                }
-            }
             box-shadow: none;
         }
     }
@@ -428,5 +437,64 @@
                 }
             }
         }
+    }
+}
+.subnet-pricing-1-box.active .subnet-pricing-1-box-btn a {
+    border-color: transparent;
+    background-color: var(--clr-theme-primary);
+    color: var(--clr-common-white);
+}
+.subnet-pricing-wrapper-main-1 {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    @media #{$xl} {
+        padding: 0 30px;
+    }
+    & .subnet-flex-item.item-1 {
+        flex: 0 0 27.749%;
+        @media #{$xxl} {
+            flex: 0 0 28.749%;
+        }
+        @media #{$lg, $md} {
+            flex: 0 0 50%;
+        }
+        @media #{$xs} {
+            flex: 0 0 100%;
+        }
+    }
+    & .subnet-flex-item.item-2 {
+        flex: 0 0 45.0266%;
+        @media #{$xxl} {
+            flex: 0 0 41.0266%;
+        }
+        @media #{$xl} {
+            flex: 0 0 37.0266%;
+        }
+        @media #{$lg, $md} {
+            order: 3;
+            flex: 0 0 100%;
+        }
+        @media #{$xs} {
+            flex: 0 0 100%;
+        }
+    }
+    & .subnet-flex-item.item-3 {
+        flex: 0 0 27.2244%;
+        @media #{$xxl} {
+            flex: 0 0 28.749%;
+        }
+        @media #{$lg, $md} {
+            flex: 0 0 50%;
+        }
+        @media #{$xs} {
+            flex: 0 0 100%;
+        }
+    }
+}
+.subnet-flex-item.pt-185.pb-150 {
+    @media #{$xl, $lg, $md, $xs} {
+        padding-top: 150px;
+        padding-bottom: 110px;
     }
 }

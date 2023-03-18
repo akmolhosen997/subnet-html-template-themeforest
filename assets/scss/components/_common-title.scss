@@ -1,3 +1,10 @@
+
+/*
+************
+*************************
+04. Common Title
+******************************************************* 
+*************************************************************** */
 @use '../abstracts/variables' as *;
 @use '../abstracts/mixins' as *;
 
@@ -89,7 +96,7 @@
         background-color: var(--clr-theme-secondary);
         color: var(--clr-common-white);
         padding: 8px 13px;
-        font-weight: 600;
+        font-weight: 500;
         font-size: 14px;
         line-height: 1;
         text-transform: uppercase;
@@ -99,7 +106,7 @@
 // subtitle-2
 .subnet-subtitle-2 {
     font-size: 14px;
-    font-weight: 600;
+    font-weight: 500;
     text-transform: uppercase;
     letter-spacing: .4px;
     color: var(--clr-body-heading);
@@ -107,5 +114,12 @@
     span {
         display: inline-block;
         margin-right: 8px;
+    }
+}
+.subnet-section-title-1 {
+    font-weight: 800;
+    font-size: 48px;
+    @media #{$xs} {
+        font-size: 32px;
     }
 }

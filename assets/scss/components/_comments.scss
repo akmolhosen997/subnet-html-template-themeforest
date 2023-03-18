@@ -1,3 +1,10 @@
+
+/*
+************
+*************************
+09. Comments
+******************************************************* 
+*************************************************************** */
 @use '../abstracts/variables' as *;
 @use '../abstracts/mixins' as *;
 
@@ -134,7 +141,7 @@
         height: 46px;
         border: 1px solid rgba(8, 8, 33, 0.1);
         border-radius: 6px;
-        padding: 0 30px;
+        padding: 0 10px;
         font-size: 14px;
         color: var(--clr-body-text);
     }
@@ -144,7 +151,6 @@
     }
     .check-box {
         display: flex;
-        align-items: center;
         span {
             display: inline-block;
             font-size: 14px;

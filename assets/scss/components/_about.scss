@@ -1,3 +1,10 @@
+
+/*
+************
+*************************
+13. About
+******************************************************* 
+*************************************************************** */
 @use '../abstracts/variables' as *;
 @use '../abstracts/mixins' as *;
 
@@ -209,10 +216,7 @@
             opacity: .6;
             margin-bottom: 0;
             br {
-                @media #{$lg} {
-                    display: none;
-                }
-                @media #{$xs} {
+                @media #{$lg, $md, $xs} {
                     display: none;
                 }
             }
@@ -225,10 +229,10 @@
             &:not(:last-child) {
                 margin-right: 68px;
                 @media #{$lg} {
-                    margin-right: 20px;
+                    margin-right: 40px;
                 }
                 @media #{$xs} {
-                    margin-right: 0;
+                    margin-right: 40px;
                     margin-bottom: 30px;
                 }
                 @media #{$sm} {

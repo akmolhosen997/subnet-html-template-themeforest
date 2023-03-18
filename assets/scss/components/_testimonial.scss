@@ -1,3 +1,10 @@
+
+/*
+************
+*************************
+19. Testimonial
+******************************************************* 
+*************************************************************** */
 @use '../abstracts/variables' as *;
 @use '../abstracts/mixins' as *;
 
@@ -5,6 +12,10 @@
 .subnet-testimonial-1 {
     &-area {
         background-size: unset;
+        background-position: 0 89px;
+        @media #{$xs} {
+            background-position: center;
+        }
     }
     &-card {
         margin: 0 15px;
@@ -136,20 +147,27 @@
         .subnet-testimonial-1-slide-progation {
             .testimonial_1_progation {
                 span {
-                    margin: 0px 5px !important;
+                    margin: 0px 5px;
                     border-radius: 50%;
                     border: 2px solid var(--clr-common-white);
                     outline: 1px solid transparent;
                     background-color: #e6e6e6;
-                    width: 24px;
-                    height: 24px;
+                    width: 12px;
+                    height: 12px;
+                    cursor: pointer;
+                    opacity: 1;
                     cursor: pointer;
                       &.swiper-pagination-bullet-active {
-                            border: 8px solid var(--clr-common-white);
-                            outline: 1px solid var(--clr-theme-primary);
-                            background-color: var(--clr-theme-primary);
-                            width: 24px;
-                            height: 24px;
+                        background-color: var(--clr-theme-primary);
+                        width: 4px;
+                        height: 4px;
+                        border: 0;
+                        opacity: 1;
+                        display: inline-block;
+                        outline: 1px solid red;
+                        outline-offset: 6px;
+                        transform: translateY(-4px);
+                        margin: 0 10px;
                       }
                 }
             }
@@ -265,8 +283,7 @@
                         font-weight: 400;
                         line-height: 38px;
                         margin-bottom: 0;
-                        text-transform: capitalize;
-                        opacity: .6;
+                        color: #6B6B7A;
                         i {
                             display: inline-block;
                             color: var(--clr-theme-primary);
@@ -338,4 +355,7 @@
             top: -100px;
         }
     }
+}
+.subnet-tesimonial-1-card-body p {
+    opacity: .6;
 }

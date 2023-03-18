@@ -1,3 +1,10 @@
+
+/*
+************
+*************************
+22. Blog
+******************************************************* 
+*************************************************************** */
 @use '../abstracts/variables' as *;
 @use '../abstracts/mixins' as *;
 
@@ -68,11 +75,11 @@
         background: var(--clr-common-white);
         box-shadow: 0px 10px 20px rgba(8, 8, 33, 0.1), 10px 10px 0px #FFFFFF;
         border-radius: 6px;
+        outline: 1.5px solid transparent;
         overflow: hidden;
-        border: 1px solid transparent;
         @include transition(.3s);
         &:hover {
-            border: 1px solid var(--clr-theme-primary);
+            outline-color:  var(--clr-theme-primary);
             .subnet-blog-1-single-item-img {
                 a {
                     img {
@@ -140,8 +147,10 @@
     font-weight: 500;
     text-transform: capitalize;
     text-decoration: none;
+    opacity: .6;
     line-height: 10px;
     &:hover {
+        opacity: 1;
         color: var(--clr-theme-primary);
     }
 }
@@ -190,7 +199,7 @@
                 border-radius: 4px;
                 line-height: 24px;
                 font-size: 12px;
-                font-weight: 600;
+                font-weight: 500;
                 text-transform: uppercase;
                 color: var(--clr-common-white);
                 padding: 0px 12px;
@@ -252,7 +261,7 @@
                 display: inline-block;
                 color: var(--clr-common-white);
                 text-decoration: none;
-                font-weight: 600;
+                font-weight: 500;
                 line-height: 1;
                 i {
                     display: inline-block;
@@ -523,10 +532,11 @@
         }
     }
     &-next-prev-btn {
-        button , span {
+        button , span, & a {
             height: 44px;
             display: inline-block;
             border: none;
+            text-decoration: none;
             outline: none;
             border-radius: 4px;
             text-align: center;
@@ -868,4 +878,24 @@
             margin-top: 0;
         }
     }
+}
+.subnet-blog-details-next-post-wrap {
+    position: relative;
+}
+
+.subnet-blog-details-next-post-wrap::after {
+    width: 1px;
+    height: 60px;
+    background: #080821;
+    content: "";
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    opacity: .1;
+    @media #{$xs} {
+        display: none;
+    }
+}
+.subnet-comment-replay-form p span.star {
+    color: var(--clr-theme-primary);
 }

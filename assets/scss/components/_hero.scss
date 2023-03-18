@@ -1,3 +1,10 @@
+
+/*
+************
+*************************
+11. Hero
+******************************************************* 
+*************************************************************** */
 @use '../abstracts/variables' as *;
 @use '../abstracts/mixins' as *;
 
@@ -9,9 +16,23 @@
             background-repeat: no-repeat;
             background-size: cover;
             position: relative;
-            height: 835px;
-            display: flex;
-            align-items: center;
+            height: 610px;
+            @media #{$lg, $md, $xs} {
+                height: auto;
+                padding: 110px 0;
+                margin: 0;
+            }
+            @media #{$xxxl} {
+                max-width: 1450px;
+            }
+            @media #{$xxl} {
+                max-width: 1250px;
+            }
+            &.mt-110.mb-110 {
+                @media #{$xl, $lg, $md, xs} {
+                    margin: 0;
+                }
+            }
             &::after {
                 position: absolute;
                 content: "";
@@ -24,19 +45,6 @@
             &-wrap {
                 position: relative;
                 z-index: 1;
-                margin-top: -42px;
-            }
-        }
-        &-play-btn-wrap {
-            position: absolute;
-            right: 0;
-            top: 50%;
-            transform: translateY(-50%);
-            @media #{$xl,$lg} {
-                right: 50px;
-            }
-            @media #{$md,$xs} {
-                display: none;
             }
         }
     }
@@ -119,7 +127,7 @@
             h6 {
                 display: inline-block;
                 font-size: 16px;
-                font-weight: 600;
+                font-weight: 500;
                 text-transform: uppercase;
                 color: var(--clr-common-white);
                 letter-spacing: .4px;
@@ -134,6 +142,9 @@
             height: 800px;
             display: flex;
             align-items: center;
+            @media #{$lg, $md, $xs} {
+                height: 700px;
+            }
             &::after {
                 position: absolute;
                 content: "";
@@ -156,7 +167,9 @@
             &-wrap {
                 position: relative;
                 z-index: 1;
-                margin-top: -18px;
+                @media #{$xs} {
+                    padding-right: 15px;
+                }
             }
         }
         &-btn-wrap {
@@ -171,7 +184,13 @@
             }
             .subnet-btn-2 {
                 border: 1.5px solid rgba(255, 255, 255, 0.16);
-                    color: var(--clr-common-white);
+                color: var(--clr-common-white);
+                @media #{$xs} {
+                    margin-bottom: 19px;
+                }
+                @media #{$sm} {
+                    margin-bottom: 0px;
+                }
             }
         }
     }
@@ -179,7 +198,7 @@
 
 .subnet-hero-2-title {
     color: var(--clr-common-white);
-    line-height: 1.1;
+    line-height: 1.3;
     margin-bottom: 12px;
     br {
         @media #{$xs} {
@@ -192,6 +211,10 @@
         margin: 0 22px;
         font-weight: 800;
         position: relative;
+        @media #{$xs} {
+            background-color: transparent;
+            margin: 0;
+        }
         &::after {
             position: absolute;
             content: "";
@@ -199,21 +222,20 @@
             height: 0;
             right: 100%;
             top: 0;
-            border-bottom: 99px solid var(--clr-theme-secondary);
+            border-bottom: 117px solid var(--clr-theme-secondary);
             border-left: 40px solid transparent;
             @media #{$xl} {
-                border-bottom: 88px solid var(--clr-theme-secondary);
+                border-bottom: 104px solid var(--clr-theme-secondary);
             }
             @media #{$lg} {
-                border-bottom: 77px solid var(--clr-theme-secondary);
+                border-bottom: 91px solid var(--clr-theme-secondary);
             }
             @media #{$md} {
-                border-bottom: 66px solid var(--clr-theme-secondary);
+                border-bottom: 78px solid var(--clr-theme-secondary);
                 border-left: 30px solid transparent;
             }
             @media #{$xs} {
-                border-left: 20px solid transparent;
-                border-bottom: 44px solid var(--clr-theme-secondary);
+                display: none;
             }
             @media #{$sm} {
                 border-left: 25px solid transparent;
@@ -227,21 +249,20 @@
             height: 0;
             left: 100%;
             top: 0;
-            border-bottom: 99px solid transparent;
+            border-bottom: 117px solid transparent;
             border-left: 40px solid var(--clr-theme-secondary);
             @media #{$xl} {
-                border-bottom: 88px solid transparent;
+                border-bottom: 102px solid transparent;
             }
             @media #{$lg} {
-                border-bottom: 77px solid transparent;
+                border-bottom: 90px solid transparent;
             }
             @media #{$md} {
-                border-bottom: 66px solid transparent;
+                border-bottom: 78px solid transparent;
                 border-left: 30px solid var(--clr-theme-secondary);
             }
             @media #{$xs} {
-                border-left: 20px solid var(--clr-theme-secondary);
-                border-bottom: 44px solid transparent;
+                display: none;
             }
             @media #{$sm} {
                 border-left: 25px solid var(--clr-theme-secondary);
@@ -259,10 +280,7 @@
         font-size: 60px;
     }
     @media #{$xs} {
-        font-size: 40px;
-    }
-    @media #{$sm} {
-        font-size: 50px;
+        font-size: 34px;
     }
 }
 
@@ -273,9 +291,18 @@
     line-height: 30px;
     opacity: .6;
     margin-bottom: 0;
+    @media #{$md} {
+        opacity: 1;
+    }
     br {
         @media #{$xs} {
             display: none;
         }
     }
+}
+h1.subnet-hero-2-title {
+    font-weight: 800;
+}
+.subnet-hero-2-inner-content {
+    background-position: top right;
 }

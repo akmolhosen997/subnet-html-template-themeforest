@@ -2,7 +2,7 @@
 /*
 ************
 *************************
-02. header
+16. Gallery
 ******************************************************* 
 *************************************************************** */
 @use '../abstracts/variables' as *;
@@ -113,10 +113,13 @@
                             background-color: transparent;
                             text-align: center;
                             line-height: 64px;
-                            font-size: 18px;
+                            font-size: 16px;
                             border-radius: 50%;
                             color: var(--clr-common-white);
                             border: 2px solid rgba(255, 255, 255, 0.2);
+                            i {
+                                transform: translateY(-1px);
+                            }
                         }
                     }
                     .title {
@@ -125,7 +128,7 @@
                         color: var(--clr-common-white);
                         line-height: 30px;
                         display: inline-block;
-                        margin-bottom: 0;
+                        margin-bottom: 15px;
                         @media #{$xs} {
                             font-size: 20px;
                         }
@@ -221,6 +224,9 @@
                         color: var(--clr-common-white);
                         border: 2px solid rgba(255, 255, 255, 0.2);
                         margin-right: 8px;
+                        i {
+                            transform: translateY(-2px);
+                        }
                     }
                     span {
                         font-weight: 500;
@@ -267,4 +273,13 @@
             }
         }
     }
+}
+
+.subnet-client-list-1-content-wrap img {
+    filter: opacity(0.5);
+    transition: all .3s;
+}
+
+.subnet-client-list-1-content-wrap img:hover {
+    filter: opacity(1);
 }

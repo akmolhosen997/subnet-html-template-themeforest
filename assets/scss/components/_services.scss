@@ -1,5 +1,14 @@
+
+/*
+************
+*************************
+20. Services
+******************************************************* 
+*************************************************************** */
+
 @use '../abstracts/variables' as *;
 @use '../abstracts/mixins' as *;
+@use '../components/animation' as *;
 
 
 .subnet-services-1 {
@@ -12,6 +21,11 @@
         .subnet-section-title-1 {
             color: var(--clr-common-white);
             margin-bottom: 17px;
+            br {
+                @media #{$xs, $sm, $md} {
+                    display: none;
+                }   
+            }
         }
         .section-title-p {
             font-size: 16px;
@@ -44,12 +58,19 @@
         position: absolute;
         left: -45px;
         top: 40px;
-        @media #{$xl,$lg} {
-            top: 20px;     
+        @media #{$xl} {
+            top: 34px;     
+        }
+        @media #{$lg} {
+            top: 33px;
         }
         @media #{$md,$xs} {
             width: 100%;
             position: unset;   
+        }
+        & > img {
+            position: relative;
+            z-index: 3;
         }
     }
 }
@@ -66,6 +87,12 @@
     &-wrap {
         display: flex;
         flex-wrap: wrap;
+        @media #{$xs} {
+            justify-content: center;
+        }
+        @media #{$sm} {
+            justify-content: start;
+        }
     }
     &-item {
         width: 190px;
@@ -74,6 +101,7 @@
         box-shadow: 0px 10px 10px rgb(8 8 33 / 10%);
         border-radius: 6px;
         position: relative;
+        z-index: 3;
         padding: 20px 15px;
         display: flex;
         flex-direction: column;
@@ -167,7 +195,7 @@
                 a {
                     text-decoration: none; 
                     &:hover {
-                        color: var(--clr-theme-secondary);
+                        color: var(--clr-common-white);
                     }
                 }
             }
@@ -443,5 +471,36 @@
         @media #{$md,$xs} {
             margin-left: 0;
         }
+    }
+}
+.subnet-glob-shape-animated-1 {
+    &.has-pos {
+        position: absolute;
+        top: 0;
+        right: 16px;
+        & img {
+            animation-name: unlimitedRound;
+            animation-duration: 5s;
+            animation-timing-function: linear;
+            animation-iteration-count: infinite;
+        }
+    }
+}
+.subnet-services-feature-1-item.hr-subnet-feature-1-box {
+    & .content {
+        & h6 a {
+            &:hover {
+                color: var(--clr-common-white);
+            }
+        }
+    }
+}
+
+.subnet-services-details-left.pr-80 {
+    @media #{$xl} {
+        padding-right: 60px;
+    }
+    @media #{$lg} {
+        padding-right: 50px;
     }
 }

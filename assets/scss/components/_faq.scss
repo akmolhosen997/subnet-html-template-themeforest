@@ -1,10 +1,17 @@
+
+/*
+************
+*************************
+25. contact
+******************************************************* 
+*************************************************************** */
 @use '../abstracts/variables' as *;
 @use '../abstracts/mixins' as *;
 
 .subnet-faq-item {
     button {
         width: 100%;
-        line-height: 35px;
+        line-height: 28px;
         border: none;
         text-align: left;
         font-weight: 500;
@@ -36,7 +43,7 @@
             background-color: #ECECEC;
             text-align: center;
             font-size: 12px;
-            line-height: 34px;
+            line-height: 36px;
             border-radius: 50%;
             margin-right: -20px;
             color: var(--clr-body-text);
@@ -74,4 +81,7 @@
         }
     }
     
+}
+span.plus-icon i {
+    font-size: 16px;
 }

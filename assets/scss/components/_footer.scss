@@ -1,3 +1,11 @@
+
+/*
+************
+*************************
+27. footer
+******************************************************* 
+*************************************************************** */
+
 @use '../abstracts/variables' as *;
 @use '../abstracts/mixins' as *;
 
@@ -23,10 +31,17 @@
                     font-size: 16px;
                     font-weight: 500;
                     text-transform: capitalize;
-                    color: var(--clr-common-white);
                     margin-bottom: 2px;
                     line-height: 22px;
-                    opacity: .7;
+                    color: #babbbc;
+                    a {
+                        text-decoration: none;
+                        color: var(--clr-common-white);
+                        opacity: 0.7;
+                        &:hover {
+                            opacity: 1;
+                        }
+                    }
                 }
                 h6 {
                     font-weight: 700;

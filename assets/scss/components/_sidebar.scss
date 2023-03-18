@@ -2,7 +2,7 @@
 /*
 ************
 *************************
-02. header
+07. Sidebar
 ******************************************************* 
 *************************************************************** */
 @use '../abstracts/variables' as *;
@@ -26,6 +26,9 @@
         right: -500px;
         opacity: 0;
         visibility: hidden;
+        @media #{$xs} {
+            padding: 50px 30px;
+        }
         &:is(.active) {
             right: 0;
             visibility: visible;
@@ -88,7 +91,7 @@
                 border: 1px solid rgb(255 255 255 / 20%);
                 color: var(--clr-common-white);
                 font-size: 16px;
-                padding: 12px 15px;
+                padding: 15px 15px;
                 padding-right: 50px;
                 border-radius: 5px;
                 &::-moz-placeholder {
@@ -167,19 +170,16 @@
                 ul {
                     li {
                         padding: 0;
+                        
                         a {
                             padding: 15px 0;
                             width: 100%;
                             font-size: 16px;
                             text-transform: capitalize;
                             border-top: none;
+                            opacity: 1;
                             &:hover {
                                 color:var(--clr-common-white);
-                            }
-                        }
-                        &:not(:last-child) {
-                            a {
-                                border-bottom: 1px solid rgb(255 255 255 / 24%);
                             }
                         }
                         &:is(.has-dropdown-menu) {
@@ -224,6 +224,12 @@
                                     font-size: 16px;
                                     color: var(--clr-common-white);
                                 }
+                            }
+                        }
+                        &:not(:last-child) {
+                            border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+                            a {
+                                border-bottom: 1px solid rgba(255, 255, 255, 0.2); 
                             }
                         }
                     }

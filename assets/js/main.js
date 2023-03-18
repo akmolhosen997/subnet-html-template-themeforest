@@ -188,9 +188,12 @@ if (jQuery(".testimonial_1_slide_active").length > 0) {
 				slidesPerView: 2,
 			},
 			992: {
-				slidesPerView: 3,
+				slidesPerView: 2,
 			},
 			1200: {
+				slidesPerView: 2,
+			},
+			1400: {
 				slidesPerView: 3,
 			},
 		}
@@ -223,17 +226,20 @@ if (jQuery(".feature_show_1_slide_active").length > 0) {
 				slidesPerView: 2,
 			},
 			768: {
-				slidesPerView: 3,
+				slidesPerView: 2,
 			},
 			992: {
 				slidesPerView: 3,
 			},
 			1200: {
-				slidesPerView: 5,
+				slidesPerView: 3,
 			},
 			1400: {
-				slidesPerView: 6,
+				slidesPerView: 4,
 			},
+			1600: {
+				slidesPerView: 5,
+			}
 		}
 
 });}
@@ -259,11 +265,8 @@ if (jQuery(".feature_show_2_slide_active").length > 0) {
 			0: {
 				slidesPerView: 1,
 			},
-			480: {
-			slidesPerView: 2,
-			},
 			576: {
-				slidesPerView: 1,
+				slidesPerView: 2,
 			},
 			768: {
 				slidesPerView: 2,
@@ -272,7 +275,7 @@ if (jQuery(".feature_show_2_slide_active").length > 0) {
 				slidesPerView: 3,
 			},
 			1200: {
-				slidesPerView: 4,
+				slidesPerView: 3,
 			},
 			1400: {
 				slidesPerView: 4,
@@ -375,7 +378,6 @@ $('.odometer').appear(function (e) {
 // WOW active
 new WOW().init();
 
-sliderActive();
 // datepicker
 $('[data-toggle="datepicker"]').datepicker();
 // select2

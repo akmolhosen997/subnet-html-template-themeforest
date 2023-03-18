@@ -1,4 +1,10 @@
 
+/*
+************
+*************************
+03. Animation
+******************************************************* 
+*************************************************************** */
 // hero-play-btn-animation-1  
 
   @-webkit-keyframes pulsate1 {
@@ -89,3 +95,14 @@
   }
 }
 
+@keyframes unlimitedRound {
+  0% {
+    transform: rotate(0);
+  }
+  50% {
+    transform: rotate(10deg);
+  }
+  100% {
+    transform: rotate(0);
+  }
+}

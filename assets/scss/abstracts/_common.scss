@@ -12,49 +12,34 @@
 CSS INDEX
 =================== 
 01. common
-02. header
-03. back to top
-04. Footer
-05. Slider
-06. Button
-07. Appoint
-08. About
-09. Section title
-10. Service
-11. cta
-12. Typography
-13. Animation
-14. Portfolio
-15. Team
-16. Brand
-17. Testimonial
-18. Image Cross
-19. Counter
-20. Blog
-21. Footer
-22. Hero
-23. Time Schedule
-24. Pricing
-25. Faq
-26. Work
-27. Product
-28. Instagram
-29. Breadcrumb
-30. Form
-31. doctor
-32. Doctor details
-33. Service details
-34. Blockquote
-35. Widget
-36. Portfolio Details
-37. Comments
-38. Popup
-39. Account
-40. Error
-41. Shop
-42. Cart
-43. Checkout
-44. Contact
+02. button
+03. Animation
+04. Common Title
+05. Breadcrumb
+06. Header
+07. Sidebar
+08. Sidebar Widget
+09. Comments
+10. Popup
+11. Hero
+12. Feature
+13. About
+14. Team
+15. Movie
+16. Gallery
+17. CTA
+17. Pricing
+18. Client List
+19. Testimonial
+20. Services
+21. Feature Show
+22. Blog
+23. Contact Form
+24. Faq
+25. contact
+26. erorr
+27. footer
+27. Back To Top
 ******************************************************* 
 *************************************************************** */
 
@@ -131,7 +116,6 @@ h6 {
 	margin-top: 0px;
     line-height: 1.25;
 	font-weight: 900;
-	text-transform: capitalize;
     margin-bottom: 15px;
 }
 h1 a,
@@ -345,21 +329,7 @@ input:focus::placeholder, textarea:focus::placeholder {
         --bs-gutter-x: 0;
     }
 }
-@media only screen and (min-width: 1200px) {
-    .container {
-        max-width: 1200px;
-    }
-}
-@media only screen and (min-width: 1400px) {
-    .container-2 {
-        max-width: 1330px;
-    }
-}
-@media only screen and (min-width: 1600px) {
-    .container-2 {
-        max-width: 1430px;
-    }
-}
+
 .bg-default {
     background-size: cover;
     background-position: center center;
@@ -387,4 +357,23 @@ input:focus::placeholder, textarea:focus::placeholder {
 }
 .sidebar-bg {
     background-color: var(--clr-bg-gray-12);
+}
+.subnet-custom-cintainer-1 {
+    max-width: 1600px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.container {
+    @media (min-width: 1400px) {
+        max-width: 1200px;
+    }
+}
+@media only screen and (min-width: 1400px) {
+    .container-2 {
+        max-width: 1330px;
+    }
+}
+
+.pl-235 {
+    padding-left: 235px;
 }

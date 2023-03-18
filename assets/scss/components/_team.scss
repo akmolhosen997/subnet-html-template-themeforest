@@ -2,7 +2,7 @@
 /*
 ************
 *************************
-02. header
+14. Team
 ******************************************************* 
 *************************************************************** */
 @use '../abstracts/variables' as *;
@@ -30,7 +30,6 @@
         &-card {
             &-img {
                 width: 100%;
-                height: 500px;
                 position: relative;
                 overflow: hidden;
                 border-radius: 10px;
@@ -63,7 +62,7 @@
                     font-size: 14px;
                     color: var(--clr-common-white);
                     padding: 11px 0px;
-                    opacity: .4;
+                    opacity: .7;
                     &:hover {
                         opacity: 1;
                     }
@@ -137,12 +136,17 @@
         max-width: 370px;
         width: 100%;
         height: 440px;
+        @media #{$md} {
+            max-width: 100%;
+            height: auto;
+        }
         @media #{$xs} {
             max-width: 100%;
-            height: 300px;
+            height: auto;
         }
         @media #{$sm} {
-            height: 380px;
+            max-width: 100%;
+            height: auto;
         }
         img {
             width: 100%;
@@ -163,7 +167,7 @@
                 font-size: 14px;
                 color: var(--clr-common-white);
                 padding: 11px 0px;
-                opacity: .4;
+                opacity: .7;
                 &:hover {
                     opacity: 1;
                 }
@@ -200,6 +204,7 @@
             text-transform: capitalize;
             color: var(--clr-body-text);
             margin-bottom: 23px;
+            opacity: .7;
         }
         .description {
             font-size: 16px;
