@@ -158,7 +158,7 @@
                                                 <li><a href="blog-details.html">blog details</a></li>
                                             </ul>
                                         </li>
-                                        <li class="has-dropdown-menu">
+                                       <li class="has-dropdown-menu">
                                             <a href="shop.html">shop</a>
                                             <ul class="sub-menu">
                                                 <li><a href="shop.html">shop</a></li>
@@ -202,10 +202,10 @@
                     <div class="row">
                         <div class="col-xxl-12">
                             <div class="subnet-breadcrumb-wrap text-center">
-                                <h2 class="subnet-breadcrumb-title wow" data-splitting="">Error 404</h2>
+                                <h2 class="subnet-breadcrumb-title wow" data-splitting="">Cart</h2>
                                 <div class="subnet-breadcrumb-list wow fadeInUp" data-wow-delay=".3s">
                                     <a href="index.html">Home</a>
-                                    <span>Error 404</span>
+                                    <span>Cart</span>
                                 </div>
                             </div>
                         </div>
@@ -214,27 +214,124 @@
             </div>
             <!-- breadcrumb-area-end -->
 
-            <!-- erorr-page-start -->
-            <div class="subnet-erorr-page-area pt-140 pb-160">
-                <div class="bg-shape">
-                    <img src="assets/img/bg/erorr-page-bg-shape.png" alt="">
-                </div>
+            <!-- cart area start -->
+            <div class="cart-area pt-140 pb-125">
                 <div class="container">
                     <div class="row">
-                        <div class="col-12">
-                            <div class="subnet-erorr-page-content text-center">
-                                <div class="img wow fadeIn" data-wow-delay=".3s">
-                                    <img src="assets/img/icon/erorr-icon.png" alt="">
-                                </div>
-                                <h4 class="wow" data-splitting="" >Oops... Page Not Found!</h4>
-                                <p class="wow fadeInUp">Pellentesque adipiscing commodo elit at imperdiet dui. Sit amet nisl suscipit <br> Iaculis  phasellus vestibulum lorem.</p>
-                                <a href="index.html" class="erorr-page-btn subnet-btn-1 wow fadeInUp" type="submit" >Go Back to Home <i class="fal fa-arrow-right"></i></a>
+                        
+                        <!-- product-list -->
+                        <div class="col-xxl-8 col-xl-8 col-lg-8 mb-30 mb-lg-0">
+                            <div class="shopping-cart-table wow fadeInUp">
+                                <table class="table">
+                                    <thead>
+                                        <tr>
+                                            <th>Product</th>
+                                            <th>Price</th>
+                                            <th>Quantity</th>
+                                            <th>Subtotal</th>
+                                            <th>Action</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+
+                                        <!-- single-product -->
+                                        <tr>
+                                            <td>
+                                                <div class="shopping-cart-product-box">
+                                                    <div class="image">
+                                                        <img src="assets/img/shop/product-img-1.png" alt="">
+                                                    </div>
+                                                    <div class="title-wrap">
+                                                        <h4 class="title wow" data-splitting=""><a href="shop-details.html">Alba Botanica Facial</a></h4>
+                                                    </div>
+                                                </div>
+                                            </td>
+                                            <td>
+                                                <div class="product-cart-price">
+                                                    <span>$19.00</span>
+                                                </div>
+                                            </td>
+                                            <td>
+                                                <div class="single-product-popup-quantity-box cart_product_quantity">
+                                                    <form action="#">
+                                                        <a href="#0" class="plus"><i class="fal fa-plus"></i></a>
+                                                        <input type="text" readonly="" name="quantity" value="1">
+                                                        <a href="#0" class="minus"><i class="fal fa-minus"></i></a>
+                                                    </form>
+                                                </div>
+                                            </td>
+                                            <td>
+                                                <div class="product-cart-price">
+                                                    <span>19.00</span>
+                                                </div>
+                                            </td>
+                                            <td><button class="cart-times-btn"><i class="fal fa-times"></i></button></td>
+                                        </tr>
+
+                                        <!-- single-product -->
+                                        <tr>
+                                            <td>
+                                                <div class="shopping-cart-product-box">
+                                                    <div class="image">
+                                                        <img src="assets/img/shop/product-img-2.png" alt="">
+                                                    </div>
+                                                    <div class="title-wrap">
+                                                        <h4 class="title wow" data-splitting=""><a href="shop-details.html">Alba Brawn Facial</a></h4>
+                                                    </div>
+                                                </div>
+                                            </td>
+                                            <td>
+                                                <div class="product-cart-price">
+                                                    <span>$30.00</span>
+                                                </div>
+                                            </td>
+                                            <td>
+                                                <div class="single-product-popup-quantity-box cart_product_quantity">
+                                                    <form action="#">
+                                                        <a href="#0" class="plus"><i class="fal fa-plus"></i></a>
+                                                        <input type="text" readonly="" name="quantity" value="1">
+                                                        <a href="#0" class="minus"><i class="fal fa-minus"></i></a>
+                                                    </form>
+                                                </div>
+                                            </td>
+                                            <td>
+                                                <div class="product-cart-price">
+                                                    <span>$30.00</span>
+                                                </div>
+                                            </td>
+                                            <td><button class="cart-times-btn"><i class="fal fa-times"></i></button></td>
+                                        </tr>
+
+                                    </tbody>
+                                </table>
                             </div>
                         </div>
+
+                        <!-- checkout-option -->
+                        <div class="col-xxl-4 col-xl-4 col-lg-4">
+                            <div class="cart-widget-left-space pl-40  wow fadeInUp ">
+                                <div class="cart-total-box-2">
+                                    <h4 class="title">Cart Totals</h4>
+                                    <ul>
+                                        <li><span class="label">Subtotal</span> <span class="price">$38.00</span></li>
+                                        <li>
+                                            <span class="label">Shipping</span>
+                                            <select name="shipping" class="shipping has-nice-select">
+                                                <option value="1">Free Shipping</option>
+                                                <option value="2">Premium</option>
+                                            </select>
+                                        </li>
+                                        <li><span class="label">Total</span> <span class="price">$38.00</span></li>
+                                        <li class="has-cart-checkout-list-form-style"><button class="cart-checkout-form-btn mt-40 subnet-btn-1" type="submit">Checkout</button></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+
                     </div>
                 </div>
             </div>
-            <!-- erorr-page-end -->
+            <!-- cart area end -->
 
         </main>
 

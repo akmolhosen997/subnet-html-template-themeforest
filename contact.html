@@ -31,6 +31,11 @@
     
     <body>
 
+        <!-- preloader -->
+        <div class="preloader">
+            <span class="loader"></span>
+        </div>
+
         <!-- mobile-menu-start -->
         <div class="subnet-sidebar-1-area sidebar_1_active  blue-bg">
         <div class="subnet-sidebar-1-logo-wrap mb-50">
@@ -66,6 +71,8 @@
 
         <!-- header-area-start -->
         <header class="subnet-header-area subnet-header-1" >
+
+            <!-- header-top -->
             <div class="subnet-header-1-top blue-bg d-none d-lg-block">
                 <div class="has-border-top"></div>
                 <div class="container container-2">
@@ -98,7 +105,9 @@
                     </div>
                 </div>
             </div>
-            <div class="subnet-header-1-bottom light-blue-bg">
+
+            <!-- header-bottom -->
+            <div class="subnet-header-1-bottom light-blue-bg header-sticky">
                 <div class="container container-2">
                     <div class="row align-items-center ">
                         <div class="col-xxl-2 col-xl-2 col-lg-2 col-md-6 col-sm-6 col-6">
@@ -130,6 +139,8 @@
                                                 <li><a href="gallery.html">gallery</a></li>
                                                 <li><a href="pricing.html">pricing packages</a></li>
                                                 <li><a href="faq.html">faq</a></li>
+                                                <li><a href="cart.html">cart</a></li>
+                                                <li><a href="checkout.html">checkout</a></li>
                                                 <li><a href="erorr.html">erorr</a></li>
                                             </ul>
                                         </li>
@@ -147,7 +158,13 @@
                                                 <li><a href="blog-details.html">blog details</a></li>
                                             </ul>
                                         </li>
-                                       
+                                        <li class="has-dropdown-menu">
+                                            <a href="shop.html">shop</a>
+                                            <ul class="sub-menu">
+                                                <li><a href="shop.html">shop</a></li>
+                                                <li><a href="product-details.html">product details</a></li>
+                                            </ul>
+                                        </li>
                                         <li>
                                             <a href="contact.html">contact</a>
                                         </li>
@@ -173,6 +190,7 @@
                     </div>
                 </div>
             </div>
+
         </header>
         <!-- header-area-end -->
 
@@ -336,20 +354,19 @@
         <!-- popup-area-start -->
         <div class="overlay"></div>
         <div class="sg-popup-search-box search_1_popup_active blue-bg">
-        <div class="container">
-            <h4 class="title">find what you need</h4>
-            <div class="sg-popup-search-box-form">
-                <form action="#">
-                    <div class="sg-popup-search-box-input">
-                        <input type="text" placeholder="Search...">
-                    </div>
-                    <button type="submit"><i class="fal fa-search"></i></button>
-                </form>
-                <button class="sg-popup-search-box-close-action-btn search_1_popup_close"><i class="fal fa-times"></i></button>
+            <div class="container">
+                <h4 class="title">find what you need</h4>
+                <div class="sg-popup-search-box-form">
+                    <form action="#">
+                        <div class="sg-popup-search-box-input">
+                            <input type="text" placeholder="Search...">
+                        </div>
+                        <button type="submit"><i class="fal fa-search"></i></button>
+                    </form>
+                    <button class="sg-popup-search-box-close-action-btn search_1_popup_close"><i class="fal fa-times"></i></button>
+                </div>
             </div>
         </div>
-        </div>
-
         <!-- popup-area-end -->
 
         <!-- footer area start -->

@@ -1,9 +1,16 @@
 (function ($) {
 "use strict";
 
+// preloader
+let preloader = document.querySelector(".preloader");
+	window.addEventListener('load', function(){
+		preloader.style.opacity = "0";
+		preloader.style.visibility = "hidden";
+})
+
 $(window).on('scroll', function () {
 	var scroll = $(window).scrollTop();
-	if (scroll < 200) {
+	if (scroll < 35) {
 		$(".header-sticky").removeClass("sticky");
 	} else {
 		$(".header-sticky").addClass("sticky");
@@ -301,19 +308,92 @@ var swiper = new Swiper(".about_1_slide_active", {
 
 
 // pricing-2-active
- 
 $(".subnet-pricing-2-box").on("mouseover", function(){
 	var current_class = document.getElementsByClassName("subnet-pricing-2-box active");
 	current_class[0].className = current_class[0].className.replace(" active", "");
 	this.className += " active";
-  });
+});
+
+// product-details-slider
+var singleProductPopupImgThree = new Swiper(".product_datails_img_slide_active", {
+	loop: true,
+	spaceBetween: 0,
+	slidesPerView: 1,
+	freeMode: true,
+	autoplay: false,
+	watchSlidesProgress: true,
+});
+var singleProductPopupControlThree = new Swiper(".product_datails_thum_slide_active", {
+	loop: true,
+	spaceBetween: 0,
+	slidesPerView: 4,
+	freeMode: true,
+	autoplay: false,
+	watchSlidesProgress: true,
+	slideToClickedSlide: true,
+	direction: "vertical",
+	thumbs: {
+		swiper: singleProductPopupImgThree,
+	},
+	breakpoints: {
+		0: {
+			slidesPerView: 3,
+		},
+		576: {
+			slidesPerView: 4,
+		},
+		768: {
+			slidesPerView: 4,
+		},
+		992: {
+			slidesPerView: 4,
+		},
+		1199: {
+			slidesPerView: 4
+		}
+	}
+});
+
+
+// product quantity
+var productQuantity = 1;
+// quantity form 1
+$('.product_details_quantity .plus').on('click', function () {
+	var selectedInput = $(this).closest('.product_details_quantity').find('input');
+	productQuantity += 1;
+	selectedInput.attr('value', productQuantity);
+});
+$('.product_details_quantity .minus').on('click', function () {
+	var selectedInput = $(this).closest('.product_details_quantity').find('input');
+	productQuantity-=1;
+	if(productQuantity < 1) {
+		productQuantity = 1;
+	}
+	selectedInput.attr('value', productQuantity);
+});
+
+// cart product quantity
+var cartproduct = 1;
+// quantity form 1
+$('.cart_product_quantity .plus').on('click', function () {
+	var selectedInput = $(this).closest('.cart_product_quantity').find('input');
+	cartproduct += 1;
+	selectedInput.attr('value', cartproduct);
+});
+$('.cart_product_quantity .minus').on('click', function () {
+	var selectedInput = $(this).closest('.cart_product_quantity').find('input');
+	cartproduct-=1;
+	if(cartproduct < 1) {
+		cartproduct = 1;
+	}
+	selectedInput.attr('value', cartproduct);
+});
+
 
 // splitting text animaton
-
 $(window).on("load", function () {
 	Splitting();
 });
-
 
 /* magnificPopup img view */
 $('.popup-image').magnificPopup({
@@ -326,7 +406,9 @@ $('.popup-image').magnificPopup({
 $('.popup-video').magnificPopup({
 	type: 'iframe'
 });
-$('.has-nice-select, .contact-form select').niceSelect();
+
+$('.select-country, .shipping, .contact-form, select').niceSelect();
+
 // data background
 $("[data-background]").each(function(){
 	$(this).css("background-image","url("+$(this).attr("data-background") + ") ")
@@ -405,32 +487,18 @@ $('.bg-overlay, .sg-popup-search-box-close-action-btn').on('click', function() {
 $('.has-cursor').on('click',function() {
 	$(this).closest('.sg-widget-shop-1').find('.sg-shop-widget-toogle').slideToggle(500);
 })
+
 // range slider activation
 $(".slider-range-bar").slider({
 	range: true,
 	min: 0,
 	max: 500,
-	values: [75, 300],
+	values: [0, 500],
 	slide: function (event, ui) {
 		$(".amount").val("$" + ui.values[0] + " - $" + ui.values[1]);
 	},
 });
-// product quantity
-var productQuantity = 1;
-// quantity form 1
-$('.sg-single-product-popup-quantity-box .plus').on('click', function () {
-	var selectedInput = $(this).closest('.sg-single-product-popup-quantity-box').find('input');
-	productQuantity += 1;
-	selectedInput.attr('value', productQuantity);
-});
-$('.sg-single-product-popup-quantity-box .minus').on('click', function () {
-	var selectedInput = $(this).closest('.sg-single-product-popup-quantity-box').find('input');
-	productQuantity-=1;
-	if(productQuantity < 1) {
-		productQuantity = 1;
-	}
-	selectedInput.attr('value', productQuantity);
-});
+
 // quantity form 2
 $('.sg-shopping-cart-popup-quantity-form .plus-btn').on('click', function () {
 	var selectedInput = $(this).closest('.sg-shopping-cart-popup-quantity-form').find('input');

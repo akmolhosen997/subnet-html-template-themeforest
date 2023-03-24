@@ -15,8 +15,27 @@
     height: 4px;
 }
 
+.sticky {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 99999;
+    @include transition(.3s);
+    .subnet-header-1-bottom-nav nav ul li > a {
+        padding: 25px 0;
+        @include transition(.3s);
+    }
+}
+
+.subnet-header-1-bottom {
+    @include transition(.3s);
+}
+
 .subnet-header-1 {
+    @include transition(.3s);
     &-top {
+        @include transition(.3s);
         &-left {
             @media #{$xs} {
                 text-align: center;
@@ -75,6 +94,7 @@
         }
     } 
     &-bottom {
+        @include transition(.3s);
         &-logo {
             a {
                 display: block;

@@ -190,7 +190,7 @@
                     </div>
                 </div>
             </div>
-
+            
         </header>
         <!-- header-area-end -->
 
@@ -202,10 +202,10 @@
                     <div class="row">
                         <div class="col-xxl-12">
                             <div class="subnet-breadcrumb-wrap text-center">
-                                <h2 class="subnet-breadcrumb-title wow" data-splitting="">Error 404</h2>
+                                <h2 class="subnet-breadcrumb-title wow" data-splitting="">checkout</h2>
                                 <div class="subnet-breadcrumb-list wow fadeInUp" data-wow-delay=".3s">
                                     <a href="index.html">Home</a>
-                                    <span>Error 404</span>
+                                    <span>checkout</span>
                                 </div>
                             </div>
                         </div>
@@ -214,27 +214,202 @@
             </div>
             <!-- breadcrumb-area-end -->
 
-            <!-- erorr-page-start -->
-            <div class="subnet-erorr-page-area pt-140 pb-160">
-                <div class="bg-shape">
-                    <img src="assets/img/bg/erorr-page-bg-shape.png" alt="">
-                </div>
+            <!-- checkout area start -->
+            <div class="checkout-area pt-135 pb-140">
                 <div class="container">
+                    <div class="return-customar-login-warning-link mb-30 wow fadeInUp">
+                        <span>Returning customer?</span><a href="sign-in.html">Click here to login</a>
+                    </div>
                     <div class="row">
-                        <div class="col-12">
-                            <div class="subnet-erorr-page-content text-center">
-                                <div class="img wow fadeIn" data-wow-delay=".3s">
-                                    <img src="assets/img/icon/erorr-icon.png" alt="">
+
+                        <!-- Billing details form -->
+                        <div class="col-xxl-6 col-xl-6 col-lg-6 mb-40 mb-lg-0">
+                            <div class="billing-details-space-right mb-45 pr-20">
+
+                                <h4 class="billing-details-title mb-25 wow" data-splitting="">Billing details</h4>
+
+                                <!-- form -->
+                                <div class="subnet-submit-form-default wow fadeInUp">
+                                    <div class="row">
+                                        <div class="col-xxl-6 col-xl-6 col-lg-6 col-md-6 col-sm-6">
+                                            <div class="single-item mb-30">
+                                                <input type="text" id="firstname" placeholder="First name" class="firstname">
+                                            </div>
+                                        </div>
+                                        <div class="col-xxl-6 col-xl-6 col-lg-6 col-md-6 col-sm-6">
+                                            <div class="single-item mb-30">
+                                                <input type="text" id="lastname" class="lastname" placeholder="Last name">
+                                            </div>
+                                        </div>
+                                        <div class="col-xxl-12">
+                                            <div class="single-item mb-30">
+                                                <input type="text" id="companyname" class="companyname" placeholder="Company name">
+                                            </div>
+                                        </div>
+                                        <div class="col-xxl-12">
+                                            <div class="single-item mb-30">
+                                                <select name="country" id="country" class="select-country has-select-2">
+                                                    <option value="1">United States</option>
+                                                    <option value="2">Bangladesh</option>
+                                                    <option value="1">United States</option>
+                                                </select>
+                                            </div>
+                                        </div>
+                                        <div class="col-xxl-12">
+                                            <div class="single-item mb-30">
+                                                <input type="text" placeholder="Address" class="address">
+                                            </div>
+                                        </div>
+                                        <div class="col-xxl-6 col-xl-6 col-lg-6 col-md-6 col-sm-6">
+                                            <div class="single-item mb-30">
+                                                <input type="text" placeholder="City" class="city">
+                                            </div>
+                                        </div> 
+                                        <div class="col-xxl-6 col-xl-6 col-lg-6 col-md-6 col-sm-6">
+                                            <div class="single-item mb-30">
+                                                <input type="text" placeholder="Zip Code" class="zip">
+                                            </div>
+                                        </div> 
+                                        <div class="col-xxl-6 col-xl-6 col-lg-6 col-md-6 col-sm-6">
+                                            <div class="single-item mb-35">
+                                                <input type="number"  placeholder="Phone" class="phone">
+                                            </div>
+                                        </div> 
+                                        <div class="col-xxl-6 col-xl-6 col-lg-6 col-md-6 col-sm-6">
+                                            <div class="single-item mb-35">
+                                                <input type="email" placeholder="Email Address" class="email">
+                                            </div>
+                                        </div> 
+                                        <div class="col-xxl-12">
+                                            <div class="single-item mb-10">
+                                                <div class="condition-box">
+                                                    <input type="checkbox" id="account" class="has-condition">
+                                                    <label for="account" class="condition condition-2">Create an account?</label>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-xxl-12">
+                                            <div class="single-item">
+                                                <div class="condition-box">
+                                                    <input type="checkbox" id="address_shipping" class="has-condition">
+                                                    <label for="address_shipping" class="condition condition-2">Ship to a different address? </label>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
                                 </div>
-                                <h4 class="wow" data-splitting="" >Oops... Page Not Found!</h4>
-                                <p class="wow fadeInUp">Pellentesque adipiscing commodo elit at imperdiet dui. Sit amet nisl suscipit <br> Iaculis  phasellus vestibulum lorem.</p>
-                                <a href="index.html" class="erorr-page-btn subnet-btn-1 wow fadeInUp" type="submit" >Go Back to Home <i class="fal fa-arrow-right"></i></a>
+
                             </div>
                         </div>
+
+                        <!-- order summary -->
+                        <div class="col-xxl-6 col-xl-6 col-lg-6">
+                            <h4 class="billing-details-title mb-25 wow" data-splitting="">Order summary</h4>
+                            <div class="checkout-order-summery-box mb-60">
+
+                                <!-- product-list -->
+                                <div class="checkout-order-summery-box-wrap">
+
+                                    <!-- single-product -->
+                                    <div class="checkout-order-summery-box-product wow fadeInUp">
+                                        <div class="left">
+                                            <div class="image">
+                                                <img src="assets/img/shop/product-img-1.png" alt="">
+                                            </div>
+                                            <div class="title-wrap">
+                                                <h4 class="title"><a href="shop-details.html">wireless router</a></h4> <span>x2</span>
+                                            </div>
+                                        </div>
+                                        <div class="right">
+                                            <span class="price"><span class="price d-md-none">Price: </span>$19.00</span>
+                                        </div>
+                                    </div>
+
+                                    <!-- single-product -->
+                                    <div class="checkout-order-summery-box-product wow fadeInUp">
+                                        <div class="left">
+                                            <div class="image">
+                                                <img src="assets/img/shop/product-img-2.png" alt="">
+                                            </div>
+                                            <div class="title-wrap">
+                                                <h4 class="title"><a href="shop-details.html">Polaroid P3 Music Player</a></h4> <span>x5</span>
+                                            </div>
+                                        </div>
+                                        <div class="right">
+                                            <span class="price"><span class="price d-md-none">Price: </span>$19.00</span>
+                                        </div>
+                                    </div>
+
+                                </div>
+
+                                <div class="checkout-order-summery-box-pricing-list wow fadeInUp">
+                                    <ul>
+                                        <li>
+                                            <span class="label">Subtotal</span>
+                                            <span class="price">$38.00</span>
+                                        </li>
+                                        <li>
+                                            <span class="label">Shipping</span>
+                                            <span class="price flat">Flat rate: <span>$10.00</span></span>
+                                        </li>
+                                        <li>
+                                            <span class="label total">Total</span>
+                                            <span class="price total">$48.00</span>
+                                        </li>
+                                    </ul>
+                                </div>
+
+                            </div>
+
+                            <!-- Payment Information -->
+                            <div class="checkout-payment-info-box wow fadeInUp">
+                                <h4 class="billing-details-title mb-25 wow" data-splitting="">Payment information</h4>
+
+                                <form action="#">
+                                    <div class="accordion pb-15 mb-25 accordion-flush" id="accordionFlushExample">
+                                        <div class="item-single mb-30">
+                                            <button class="collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-bank" aria-expanded="false" aria-controls="flush-bank">
+                                                <i class="fal fa-money-check"></i> Direct bank transfer
+                                            </button>
+                                            <div id="flush-bank" class="accordion-collapse collapse"  data-bs-parent="#accordionFlushExample">
+                                            <p>Make your payment directly into our bank account. Please use your
+                                                Order ID as the payment reference. Your order will not be shipped
+                                                until the funds have cleared in our account.</p>
+                                            </div>
+                                        </div>
+                                        <div class="item-single mb-30">
+                                            <button class="collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-cash" aria-expanded="false" aria-controls="flush-cash">
+                                                <i class="fal fa-money-check-alt"></i> Check Payment
+                                            </button>
+                                            <div id="flush-cash" class="accordion-collapse collapse"  data-bs-parent="#accordionFlushExample">
+                                            <p>Make your payment directly into our bank account. Please use your
+                                                Order ID as the payment reference. Your order will not be shipped
+                                                until the funds have cleared in our account.</p>
+                                            </div>
+                                        </div>
+                                        <div class="item-single mb-3">
+                                            <button class="collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
+                                                <i class="fal fa-hand-holding-usd"></i> Cash on delivery
+                                            </button>
+                                            <div id="flush-collapseThree" class="accordion-collapse collapse show" data-bs-parent="#accordionFlushExample">
+                                            <p>Make your payment directly into our bank account. Please use your
+                                                Order ID as the payment reference. Your order will not be shipped
+                                                until the funds have cleared in our account.</p>
+                                            </div>
+                                        </div>
+                                </div>
+                                <p class="checkout-payment-condition-text">Your personal data will be used to process your order, support your experience throughout this website, and for other purposes described in our <a href="about.html">privacy policy.</a></p>
+                                <button class="cart-checkout-form-btn mt-25 subnet-btn-1" type="submit">Place order</button>
+                                </form>
+                            </div>
+                            <!-- payment information -->
+
+                        </div>
+
                     </div>
                 </div>
             </div>
-            <!-- erorr-page-end -->
+            <!-- checkout area end -->
 
         </main>
 
@@ -375,8 +550,8 @@
                     <p class="subnet-copyright-text wow" data-splitting="">Copyright ©  All Rights Reserved by Subnet</p>
                 </div>
             </div>
-       </footer>
-       <!-- footer area end -->
+        </footer>
+        <!-- footer area end -->
        
         <!-- back to top start -->
         <div class="progress-wrap">

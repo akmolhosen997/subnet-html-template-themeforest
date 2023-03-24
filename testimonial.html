@@ -31,6 +31,11 @@
     
     <body>
 
+        <!-- preloader -->
+        <div class="preloader">
+            <span class="loader"></span>
+        </div>
+
         <!-- mobile-menu-start -->
         <div class="subnet-sidebar-1-area sidebar_1_active  blue-bg">
         <div class="subnet-sidebar-1-logo-wrap mb-50">
@@ -66,6 +71,8 @@
 
         <!-- header-area-start -->
         <header class="subnet-header-area subnet-header-1" >
+
+            <!-- header-top -->
             <div class="subnet-header-1-top blue-bg d-none d-lg-block">
                 <div class="has-border-top"></div>
                 <div class="container container-2">
@@ -98,7 +105,9 @@
                     </div>
                 </div>
             </div>
-            <div class="subnet-header-1-bottom light-blue-bg">
+
+            <!-- header-bottom -->
+            <div class="subnet-header-1-bottom light-blue-bg header-sticky">
                 <div class="container container-2">
                     <div class="row align-items-center ">
                         <div class="col-xxl-2 col-xl-2 col-lg-2 col-md-6 col-sm-6 col-6">
@@ -130,6 +139,8 @@
                                                 <li><a href="gallery.html">gallery</a></li>
                                                 <li><a href="pricing.html">pricing packages</a></li>
                                                 <li><a href="faq.html">faq</a></li>
+                                                <li><a href="cart.html">cart</a></li>
+                                                <li><a href="checkout.html">checkout</a></li>
                                                 <li><a href="erorr.html">erorr</a></li>
                                             </ul>
                                         </li>
@@ -147,7 +158,13 @@
                                                 <li><a href="blog-details.html">blog details</a></li>
                                             </ul>
                                         </li>
-                                       
+                                        <li class="has-dropdown-menu">
+                                            <a href="shop.html">shop</a>
+                                            <ul class="sub-menu">
+                                                <li><a href="shop.html">shop</a></li>
+                                                <li><a href="product-details.html">product details</a></li>
+                                            </ul>
+                                        </li>
                                         <li>
                                             <a href="contact.html">contact</a>
                                         </li>
@@ -173,6 +190,7 @@
                     </div>
                 </div>
             </div>
+            
         </header>
         <!-- header-area-end -->
 
@@ -342,167 +360,166 @@
             </div>
             <!-- testimonial-end -->
 
-        <!-- testimonial-start -->
-        <div class="subnet-testimonial-1-area bg-default mt-165 mb-155" data-background="assets/img/bg/net-bg.png">
-            <div class="container">
-                <div class="row">
-                    <div class="col-xxl-12">
-                        <div class="subnet-testimonial-1-title-wrap text-center mb-45">
-                            <div class="subtitle-content green-style mb-20 wow fadeIn">
-                                <span>testimonials</span>
+            <!-- testimonial-start -->
+            <div class="subnet-testimonial-1-area bg-default mt-165 mb-155" data-background="assets/img/bg/net-bg.png">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-xxl-12">
+                            <div class="subnet-testimonial-1-title-wrap text-center mb-45">
+                                <div class="subtitle-content green-style mb-20 wow fadeIn">
+                                    <span>testimonials</span>
+                                </div>
+                                <h3 class="subnet-section-title-1 wow" data-splitting="" >What they’re talking <br> about Subnet</h3>
                             </div>
-                            <h3 class="subnet-section-title-1 wow" data-splitting="" >What they’re talking <br> about Subnet</h3>
                         </div>
                     </div>
-                </div>
-                <div class="subnet-testimonial-1-content-wrap wow fadeInUp">
-                    <div class="swiper-container testimonial_1_slide_active">
-                        <div class="swiper-wrapper mb-55">
-                            <div class="swiper-slide">
-                                <div class="subnet-testimonial-1-card">
-                                    <div class="subnet-testimonial-1-card-heading">
-                                        <div class="subnet-testimonial-1-card-heading-left">
-                                            <h6 class="subnet-testimonial-1-card-title">
-                                                <img src="assets/img/icon/star-icon.png" alt="">
-                                                    <span>Trustpilot</span>
-                                            </h6>
-                                            <div class="subnet-testimonial-1-card-rating mb-25">
-                                                <div class="rating-star-wrap">
-                                                    <span><img src="assets/img/icon/white-star.png" alt="icon"></span>
-                                                    <span><img src="assets/img/icon/white-star.png" alt="icon"></span>
-                                                    <span><img src="assets/img/icon/white-star.png" alt="icon"></span>
-                                                    <span><img src="assets/img/icon/white-star.png" alt="icon"></span>
-                                                    <span><img src="assets/img/icon/white-star.png" alt="icon"></span>
+                    <div class="subnet-testimonial-1-content-wrap wow fadeInUp">
+                        <div class="swiper-container testimonial_1_slide_active">
+                            <div class="swiper-wrapper mb-55">
+                                <div class="swiper-slide">
+                                    <div class="subnet-testimonial-1-card">
+                                        <div class="subnet-testimonial-1-card-heading">
+                                            <div class="subnet-testimonial-1-card-heading-left">
+                                                <h6 class="subnet-testimonial-1-card-title">
+                                                    <img src="assets/img/icon/star-icon.png" alt="">
+                                                        <span>Trustpilot</span>
+                                                </h6>
+                                                <div class="subnet-testimonial-1-card-rating mb-25">
+                                                    <div class="rating-star-wrap">
+                                                        <span><img src="assets/img/icon/white-star.png" alt="icon"></span>
+                                                        <span><img src="assets/img/icon/white-star.png" alt="icon"></span>
+                                                        <span><img src="assets/img/icon/white-star.png" alt="icon"></span>
+                                                        <span><img src="assets/img/icon/white-star.png" alt="icon"></span>
+                                                        <span><img src="assets/img/icon/white-star.png" alt="icon"></span>
+                                                    </div>
+                                                    <span class="card-date-1" >2 days ago</span>
                                                 </div>
-                                                <span class="card-date-1" >2 days ago</span>
+                                            </div>
+                                            <div class="subnet-testimonial-1-card-heading-right">
+                                                <i class="fas fa-quote-left"></i>
                                             </div>
                                         </div>
-                                        <div class="subnet-testimonial-1-card-heading-right">
-                                            <i class="fas fa-quote-left"></i>
+                                        <div class="subnet-tesimonial-1-card-body">
+                                            <p>Nunc sapien dui, volitant ac arco bibendum mattes ex. nam condimentum ac nunc sed kaecenas sagittas du.</p>
+                                            <div class="subnet-testimonial-1-card-user">
+                                                <div class="subnet-testimonial-1-card-user-img">
+                                                    <a href="team-details.html">
+                                                        <img src="assets/img/testimonial/testimonial-1.png" alt="img">
+                                                    </a>
+                                                </div>
+                                                <div class="subnet-testimonial-1-card-user-name">
+                                                    <a class="user-name" href="team-details.html">Douglas Lyphe</a>
+                                                    <span>UI/UX Designer</span>
+                                                </div>
+                                            </div>
                                         </div>
                                     </div>
-                                    <div class="subnet-tesimonial-1-card-body">
-                                        <p>Nunc sapien dui, volitant ac arco bibendum mattes ex. nam condimentum ac nunc sed kaecenas sagittas du.</p>
-                                        <div class="subnet-testimonial-1-card-user">
-                                            <div class="subnet-testimonial-1-card-user-img">
-                                                <a href="team-details.html">
-                                                    <img src="assets/img/testimonial/testimonial-1.png" alt="img">
-                                                </a>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="subnet-testimonial-1-card">
+                                        <div class="subnet-testimonial-1-card-heading">
+                                            <div class="subnet-testimonial-1-card-heading-left">
+                                                <h6 class="subnet-testimonial-1-card-title">
+                                                    <img src="assets/img/icon/star-icon.png" alt="">
+                                                        <span>Trustpilot</span>
+                                                </h6>
+                                                <div class="subnet-testimonial-1-card-rating mb-25">
+                                                    <div class="rating-star-wrap">
+                                                        <span><img src="assets/img/icon/white-star.png" alt="icon"></span>
+                                                        <span><img src="assets/img/icon/white-star.png" alt="icon"></span>
+                                                        <span><img src="assets/img/icon/white-star.png" alt="icon"></span>
+                                                        <span><img src="assets/img/icon/white-star.png" alt="icon"></span>
+                                                        <span><img src="assets/img/icon/white-star.png" alt="icon"></span>
+                                                    </div>
+                                                    <span class="card-date-1" >3 days ago</span>
+                                                </div>
                                             </div>
-                                            <div class="subnet-testimonial-1-card-user-name">
-                                                <a class="user-name" href="team-details.html">Douglas Lyphe</a>
-                                                <span>UI/UX Designer</span>
+                                            <div class="subnet-testimonial-1-card-heading-right">
+                                                <i class="fas fa-quote-left"></i>
+                                            </div>
+                                        </div>
+                                        <div class="subnet-tesimonial-1-card-body">
+                                            <p>Nunc sapien dui, volitant ac arco bibendum mattes ex. nam condimentum ac nunc sed kaecenas sagittas du.</p>
+                                            <div class="subnet-testimonial-1-card-user">
+                                                <div class="subnet-testimonial-1-card-user-img">
+                                                    <a href="team-details.html">
+                                                        <img src="assets/img/testimonial/testimonial-2.png" alt="img">
+                                                    </a>
+                                                </div>
+                                                <div class="subnet-testimonial-1-card-user-name">
+                                                    <a class="user-name" href="team-details.html">Eric Widget</a>
+                                                    <span>front-end developer</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="subnet-testimonial-1-card">
+                                        <div class="subnet-testimonial-1-card-heading">
+                                            <div class="subnet-testimonial-1-card-heading-left">
+                                                <h6 class="subnet-testimonial-1-card-title">
+                                                    <img src="assets/img/icon/star-icon.png" alt="">
+                                                        <span>Trustpilot</span>
+                                                </h6>
+                                                <div class="subnet-testimonial-1-card-rating mb-25">
+                                                    <div class="rating-star-wrap">
+                                                        <span><img src="assets/img/icon/white-star.png" alt="icon"></span>
+                                                        <span><img src="assets/img/icon/white-star.png" alt="icon"></span>
+                                                        <span><img src="assets/img/icon/white-star.png" alt="icon"></span>
+                                                        <span><img src="assets/img/icon/white-star.png" alt="icon"></span>
+                                                        <span><img src="assets/img/icon/white-star.png" alt="icon"></span>
+                                                    </div>
+                                                    <span class="card-date-1" >4 days ago</span>
+                                                </div>
+                                            </div>
+                                            <div class="subnet-testimonial-1-card-heading-right">
+                                                <i class="fas fa-quote-left"></i>
+                                            </div>
+                                        </div>
+                                        <div class="subnet-tesimonial-1-card-body">
+                                            <p>Nunc sapien dui, volitant ac arco bibendum mattes ex. nam condimentum ac nunc sed kaecenas sagittas du.</p>
+                                            <div class="subnet-testimonial-1-card-user">
+                                                <div class="subnet-testimonial-1-card-user-img">
+                                                    <a href="team-details.html">
+                                                        <img src="assets/img/testimonial/testimonial-3.png" alt="img">
+                                                    </a>
+                                                </div>
+                                                <div class="subnet-testimonial-1-card-user-name">
+                                                    <a class="user-name" href="team-details.html">Ravi O'Leigh</a>
+                                                    <span>web designer</span>
+                                                </div>
                                             </div>
                                         </div>
                                     </div>
                                 </div>
                             </div>
-                            <div class="swiper-slide">
-                                <div class="subnet-testimonial-1-card">
-                                    <div class="subnet-testimonial-1-card-heading">
-                                        <div class="subnet-testimonial-1-card-heading-left">
-                                            <h6 class="subnet-testimonial-1-card-title">
-                                                <img src="assets/img/icon/star-icon.png" alt="">
-                                                    <span>Trustpilot</span>
-                                            </h6>
-                                            <div class="subnet-testimonial-1-card-rating mb-25">
-                                                <div class="rating-star-wrap">
-                                                    <span><img src="assets/img/icon/white-star.png" alt="icon"></span>
-                                                    <span><img src="assets/img/icon/white-star.png" alt="icon"></span>
-                                                    <span><img src="assets/img/icon/white-star.png" alt="icon"></span>
-                                                    <span><img src="assets/img/icon/white-star.png" alt="icon"></span>
-                                                    <span><img src="assets/img/icon/white-star.png" alt="icon"></span>
-                                                </div>
-                                                <span class="card-date-1" >3 days ago</span>
-                                            </div>
-                                        </div>
-                                        <div class="subnet-testimonial-1-card-heading-right">
-                                            <i class="fas fa-quote-left"></i>
-                                        </div>
-                                    </div>
-                                    <div class="subnet-tesimonial-1-card-body">
-                                        <p>Nunc sapien dui, volitant ac arco bibendum mattes ex. nam condimentum ac nunc sed kaecenas sagittas du.</p>
-                                        <div class="subnet-testimonial-1-card-user">
-                                            <div class="subnet-testimonial-1-card-user-img">
-                                                <a href="team-details.html">
-                                                    <img src="assets/img/testimonial/testimonial-2.png" alt="img">
-                                                </a>
-                                            </div>
-                                            <div class="subnet-testimonial-1-card-user-name">
-                                                <a class="user-name" href="team-details.html">Eric Widget</a>
-                                                <span>front-end developer</span>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
+                            <div class="subnet-testimonial-1-slide-progation text-center">
+                                <div class="testimonial_1_progation"></div>
                             </div>
-                            <div class="swiper-slide">
-                                <div class="subnet-testimonial-1-card">
-                                    <div class="subnet-testimonial-1-card-heading">
-                                        <div class="subnet-testimonial-1-card-heading-left">
-                                            <h6 class="subnet-testimonial-1-card-title">
-                                                <img src="assets/img/icon/star-icon.png" alt="">
-                                                    <span>Trustpilot</span>
-                                            </h6>
-                                            <div class="subnet-testimonial-1-card-rating mb-25">
-                                                <div class="rating-star-wrap">
-                                                    <span><img src="assets/img/icon/white-star.png" alt="icon"></span>
-                                                    <span><img src="assets/img/icon/white-star.png" alt="icon"></span>
-                                                    <span><img src="assets/img/icon/white-star.png" alt="icon"></span>
-                                                    <span><img src="assets/img/icon/white-star.png" alt="icon"></span>
-                                                    <span><img src="assets/img/icon/white-star.png" alt="icon"></span>
-                                                </div>
-                                                <span class="card-date-1" >4 days ago</span>
-                                            </div>
-                                        </div>
-                                        <div class="subnet-testimonial-1-card-heading-right">
-                                            <i class="fas fa-quote-left"></i>
-                                        </div>
-                                    </div>
-                                    <div class="subnet-tesimonial-1-card-body">
-                                        <p>Nunc sapien dui, volitant ac arco bibendum mattes ex. nam condimentum ac nunc sed kaecenas sagittas du.</p>
-                                        <div class="subnet-testimonial-1-card-user">
-                                            <div class="subnet-testimonial-1-card-user-img">
-                                                <a href="team-details.html">
-                                                    <img src="assets/img/testimonial/testimonial-3.png" alt="img">
-                                                </a>
-                                            </div>
-                                            <div class="subnet-testimonial-1-card-user-name">
-                                                <a class="user-name" href="team-details.html">Ravi O'Leigh</a>
-                                                <span>web designer</span>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="subnet-testimonial-1-slide-progation text-center">
-                            <div class="testimonial_1_progation"></div>
                         </div>
                     </div>
                 </div>
             </div>
-        </div>
-        <!-- testimonial-end -->
-
+            <!-- testimonial-end -->
 
         </main>
 
         <!-- popup-area-start -->
         <div class="overlay"></div>
         <div class="sg-popup-search-box search_1_popup_active blue-bg">
-        <div class="container">
-            <h4 class="title">find what you need</h4>
-            <div class="sg-popup-search-box-form">
-                <form action="#">
-                    <div class="sg-popup-search-box-input">
-                        <input type="text" placeholder="Search...">
-                    </div>
-                    <button type="submit"><i class="fal fa-search"></i></button>
-                </form>
-                <button class="sg-popup-search-box-close-action-btn search_1_popup_close"><i class="fal fa-times"></i></button>
+            <div class="container">
+                <h4 class="title">find what you need</h4>
+                <div class="sg-popup-search-box-form">
+                    <form action="#">
+                        <div class="sg-popup-search-box-input">
+                            <input type="text" placeholder="Search...">
+                        </div>
+                        <button type="submit"><i class="fal fa-search"></i></button>
+                    </form>
+                    <button class="sg-popup-search-box-close-action-btn search_1_popup_close"><i class="fal fa-times"></i></button>
+                </div>
             </div>
-        </div>
         </div>
         <!-- popup-area-end -->
 
@@ -625,8 +642,8 @@
                     <p class="subnet-copyright-text wow" data-splitting="">Copyright ©  All Rights Reserved by Subnet</p>
                 </div>
             </div>
-       </footer>
-       <!-- footer area end -->
+        </footer>
+        <!-- footer area end -->
        
         <!-- back to top start -->
         <div class="progress-wrap">
